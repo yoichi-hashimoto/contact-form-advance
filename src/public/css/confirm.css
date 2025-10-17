@@ -1,0 +1,60 @@
+.confirm__title {
+    margin: 50px auto;
+    font-size: 30px;
+    text-align: center;
+    color: #8B7969
+}
+
+.confirm__table{
+    width: 972px;
+    font-size: 20px;
+    color: #8B7969;
+}
+
+
+.confirm__table,th,td{
+    border:1px solid #E0DFDE ;
+    margin: auto;
+}
+
+th{
+    padding:10px 50px ;
+    width: 305px;
+    max-height: 120px;
+    height: 70px;
+    text-align: left;
+}
+
+td{
+    padding: 10px 50px;
+    text-align: left;
+}
+
+.confirm__item{
+    background-color: #BAA899;
+    color: white;
+}
+
+.confirm__submit{
+    text-align:center;
+    margin: 50px;
+}
+
+.confirm__submit--send{
+    background-color: #82756A;
+    padding: 10px 40px;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    border: none;
+}
+
+.confirm__submit--rewrite{
+    color:#8B7969;
+    font-size: 20px;
+    border: none;
+    text-decoration: underline;
+    background-color: white;
+    cursor: pointer;
+    margin: 0px 40px;
+}

@@ -1,0 +1,30 @@
+.thanks__big {
+    font-size: 180px;
+    color: #8B79690D;
+    position: relative;
+    text-align: center;
+}
+
+.thanks__title{
+    color:#BAA899 ;
+    font-size:30px ;
+    font-weight: bold;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.thanks__button{
+    background-color: #82756A;
+    padding: 10px 40px;
+    font-size: 20px;
+    border: none;
+    color: white;
+    position:absolute ;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}

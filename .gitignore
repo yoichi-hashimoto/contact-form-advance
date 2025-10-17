@@ -1,0 +1,9 @@
+# Laravel関連
+/vendor/
+/node_modules/
+/.env
+/public/storage
+/storage/*.key
+
+# Docker / MySQL
+docker/mysql/data/

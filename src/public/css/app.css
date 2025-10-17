@@ -1,0 +1,15 @@
+.header{
+    border:1px solid #E0DFDE;
+    background-color: white;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+
+.header__logo{
+    color: #8B7969;
+    font-size:35px;
+    text-decoration:none;
+}
