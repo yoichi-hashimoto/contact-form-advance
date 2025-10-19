@@ -46,7 +46,7 @@
     </form>
     <div class="admin__table--container">
     <div class="admin__export--button">
-    <a href="{{ route('admin.contacts.export') }}" class="export__button">CSVエクスポート</a>
+    <a href="{{ route('admin.contacts.export', request()->query()) }}" class="export__button">CSVエクスポート</a>
     </div>
 
     <div class="pagination__links">
