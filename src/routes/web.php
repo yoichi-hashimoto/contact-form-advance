@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ContactSearchController;
+use App\Http\Controllers\ContactDownloadController; 
 
 /*
 |--------------------------------------------------------------------------
@@ -34,7 +35,9 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::middleware('auth')->prefix('admin')->name('admin.')->group(function () {
+    Route::get('/contacts/export', [ContactDownloadController::class, 'export'])->name('contacts.export');
     Route::get('/contacts', [ContactSearchController::class, 'index'])->name('contacts.index');
     Route::get('/contacts/{contact}', [ContactSearchController::class, 'show'])->name('contacts.show');
     Route::delete('/contacts/{contact}', [ContactSearchController::class, 'destroy'])->name('contacts.destroy');
 });
+

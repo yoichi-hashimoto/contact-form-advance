@@ -44,13 +44,14 @@
     </div>
     </div>
     </form>
+    <div class="admin__table--container">
+    <div class="admin__export--button">
+    <a href="{{ route('admin.contacts.export') }}" class="export__button">CSVエクスポート</a>
+    </div>
 
     <div class="pagination__links">
   {{ $contacts->onEachSide(1)->links('vendor.pagination.custom') }}
     </div>
-
-    <div class="option-contents">
-        <button class="option-contents__csv"></button>
     </div>
 
     <table class="table__result">
@@ -83,7 +84,7 @@
     <div id="detailModal" class="fl-modal is-hidden" aria-hidden="true">
   <div class="fl-modal__backdrop js-close" aria-label="閉じる背景"></div>
   <div class="fl-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-    <button class="fl-modal__close js-close" aria-label="閉じる">×</button>
+    <button type="button" class="fl-modal__close js-close" aria-label="閉じる">×</button>
 
     <dl class="fl-modal__body">
       <dt>お名前</dt><dd id="m-name"></dd>
@@ -133,12 +134,10 @@
     if(e.key === 'Escape' && !modal.classList.contains('is-hidden')) closeModal();
   });
 
-  // 詳細ボタンにイベントを設定
   document.querySelectorAll('.js-show-detail').forEach(button => {
     button.addEventListener('click', async () => {
       const id = button.dataset.id;
       try {
-        // /admin/contacts/{id} へGET
         const urlBase = `{{ route('admin.contacts.index') }}`; // 例) /admin/contacts
         const res = await fetch(`${urlBase}/${id}`, {
           headers: { 'X-Requested-With': 'XMLHttpRequest' }
@@ -146,7 +145,6 @@
         if (!res.ok) throw new Error('Network error');
 
         const data = await res.json();
-        // 値をモーダルに入れる（null/undefined対策）
         els.name.textContent     = data.name     ?? '';
         els.gender.textContent   = data.gender   ?? '';
         els.email.textContent    = data.email    ?? '';
@@ -156,6 +154,7 @@
         els.category.textContent = data.category ?? '';
         els.detail.textContent   = data.detail   ?? '';
 
+        const deleteForm = document.getElementById('deleteForm');
         deleteForm.action = `${urlBase}/${id}`;
 
         openModal();

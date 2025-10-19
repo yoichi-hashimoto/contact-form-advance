@@ -1,70 +1,74 @@
-.admin__content{
-    max-width: 70%;
+.admin__content {
+    max-width: 70vw;
     margin: auto;
 }
 
-.admin__title{
+.admin__title {
     margin: 50px auto;
     font-size: 30px;
     text-align: center;
     color: #8B7969
 }
 
-select,.admin__calender{
-    background-color:#F4F4F4 ;
-    color:#8B7969 ;
+select,
+.admin__calender {
+    background-color: #F4F4F4;
+    color: #8B7969;
     padding: 10px;
     font-size: 14px;
-    border: 1px solid #E3DED9 ;
-    margin:10px;
-}
-.admin__search--text{
-    padding: 10px;
-    color: #BEB1A6;
-    background-color:#FBFBFB ;
     border: 1px solid #E3DED9;
-    width: 350px;
+    margin: 10px;
 }
 
-.search__button{
-    border:1px solid #8B7969;
+.admin__search--text {
+    padding: 10px;
+    color: #BEB1A6;
+    background-color: #FBFBFB;
+    border: 1px solid #E3DED9;
+    width: 100%;
+}
+
+.search__button {
+    border: 1px solid #8B7969;
     background-color: #82756A;
     color: #FFFFFF;
-    padding:10px 10px;
+    padding: 10px 10px;
     width: 70px;
-    margin-right: 20px;
+    margin-right: 5px;
     cursor: pointer;
 }
 
-.reset__button{
+.reset__button {
     border: 1px solid #D9C6B5;
     background-color: #D9C6B5;
     color: #FFFFFF;
+    font-size: 14px;
     padding: 10px 10px;
     cursor: pointer;
+    width: 90px;
 }
 
 
-.admin__search--items{
-    margin: 30px auto;
-    width: 100%;
+.admin__search--items {
+    margin: 0px auto;
+    width: 70vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-.table__result{
-    width: 70%;
+.table__result {
+    width: 70vw;
     border: 1px solid #E0DFDE;
     margin: auto;
     margin-bottom: 100px;
 }
 
-th{
+th {
     border: 1px solid #8B7969;
     background-color: #82756A;
     color: #FFFFFF;
@@ -73,82 +77,81 @@ th{
     text-align: left;
 }
 
-.heading__name{
+.heading__name {
     width: 10%;
 }
 
-.heading__gender{
+.heading__gender {
     width: 10%;
 }
 
-.heading__mail{
+.heading__mail {
     width: 20%;
 }
 
-.heading__category{
+.heading__category {
     width: 20%;
 }
 
-.heading__blank{
+.heading__blank {
     width: 10%;
 }
 
-.table__row{
+.table__row {
     background-color: #F4F4F4;
     color: #8B7969;
     border-bottom: 1px solid #E0DFDE;
 }
 
-td{
+td {
     padding: 10px 20px;
 }
 
-.table__data--detail{
+.table__data--detail {
     background-color: #FFFFFF;
-    border:1px solid #D9C6B5;
+    border: 1px solid #D9C6B5;
     color: #D9C6B5;
     font-size: 16px;
     cursor: pointer;
 }
 
-.table__data--detail--box{
+.table__data--detail--box {
     text-align: center;
     padding: 0;
 }
 
 
-.header{
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position:relative;
+    position: relative;
     padding: 10px 40px;
 }
 
-.header__logo{
+.header__logo {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
 }
 
-.logout__item{
+.logout__item {
     margin-left: auto;
 }
-.logout__button{
+
+.logout__button {
     border: 1px solid #D9C6B5;
     color: #D9C6B5;
     background-color: #F0F0F099;
     font-size: 20px;
-    padding:5px;
-    position:relative;
-    cursor:pointer;
+    padding: 5px;
+    position: relative;
+    cursor: pointer;
 }
 
 .pager {
     display: flex;
-    justify-content: space-between;
     margin: auto;
-    width: 70%;
 }
 
 .pager ul {
@@ -230,9 +233,9 @@ td{
     border: 1px solid #8B7969;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.18);
     padding: 40px 70px;
-    position: relative;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .fl-modal__close {
@@ -298,7 +301,7 @@ td{
     min-width: 84px;
     padding: 8px 24px;
     border: 1px solid #8B7969;
-    background:#BA370D;
+    background: #BA370D;
     color: #fff;
     font-size: 16px;
     letter-spacing: .05em;
@@ -312,4 +315,22 @@ td{
 
 .fl-btn--danger:active {
     transform: translateY(1px);
+}
+
+
+.admin__table--container {
+    margin: auto;
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.export__button {
+    text-align: center;
+    border: 1px solid #D9C6B5;
+    background-color: #E1DBD699;
+    color: #8B7969;
+    padding: 8px 20px;
+    cursor: pointer;
 }

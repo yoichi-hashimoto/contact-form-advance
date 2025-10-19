@@ -82,7 +82,7 @@
         <select name="category_id" id="category_id" class="input-box" >
             <option value="">選択してください</option>
             @foreach($categories as $category)
-            <option value="{{ $category->id }}" @selected(old('category_id') == $category->id)> {{ $category->content }}</option>
+            <option value="{{ $category->id }}" @selected(old('category_id') == $category)> {{ $category->content }}</option>
             @endforeach
         </select>
         @error('category_id')
