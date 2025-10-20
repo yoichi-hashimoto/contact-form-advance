@@ -46,6 +46,7 @@
     padding: 10px 30px;
     max-width: 30%;
     font-size: 18px;
+    cursor: pointer;
 }
 
 .login__title{

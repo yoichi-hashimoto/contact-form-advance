@@ -70,12 +70,9 @@
         <div class="form__error">{{ $message }}</div>
         @enderror
         </div>
-    <label class="form-label" for="building">建物名※</label>
+    <label class="form-label" for="building">建物名</label>
         <div class="form__control">
         <input type="text" name="building" value="{{ old('building') }}" placeholder="例）ビル名" class="input-box" >
-        @error('building')
-        <div class="form__error">{{ $message }}</div>
-        @enderror
     </div>
     <label class="form-label" for="category">お問い合わせの種類※</label>
         <div class="form__control">

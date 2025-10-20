@@ -319,11 +319,12 @@ td {
 
 
 .admin__table--container {
-    margin: auto;
+    margin:20px auto;
     width: 70vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 40px;
 }
 
 .export__button {

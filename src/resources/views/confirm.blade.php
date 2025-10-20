@@ -31,7 +31,7 @@
              <td>{{ $validated['address'] }}</td>
         </tr><tr>
             <th class="confirm__item">建物名</th>
-             <td>{{ $validated['building'] }}</td>
+             <td>{{ $validated['building'] ?? '未入力' }}</td>
         </tr><tr>
             <th class="confirm__item">お問い合わせの種類</th>
              <td>{{ $categoryLabel }}</td>

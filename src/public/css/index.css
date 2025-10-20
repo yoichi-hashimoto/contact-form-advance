@@ -74,13 +74,14 @@ main{
 .form__name{
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 6px;
     max-width: none;
+    justify-content: space-between;
 }
 
 
 .name__input-box{
-    max-width: 250px;
+    width: 250px;
     color: #BEB1A6;
     background-color: #F4F4F4;
     border: none;
